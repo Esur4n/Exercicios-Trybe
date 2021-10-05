@@ -1,0 +1,19 @@
+h1, p {
+    text-align: center;
+}
+
+#listp:hover {
+    background-color: purple;
+}
+
+#listr:hover {
+    background-color: red;
+}
+
+#listg:hover {
+    background-color: grey;
+}
+
+li {
+    width: 55px;
+}
