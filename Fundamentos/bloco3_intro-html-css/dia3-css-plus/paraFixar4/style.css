@@ -1,0 +1,46 @@
+div:hover {
+  border-color: lightseagreen;
+  border-style: solid;
+  border-radius: 15px 15px 15px 15px;
+  background-color: lightslategray;
+}
+
+div {
+  color: red;
+  padding: 1px 1px 1px 1px;
+}
+
+div:first-of-type {
+  color: lime;
+  font-style: italic;
+}
+
+div:nth-of-type(2) {
+  color: magenta;
+  font-family: monospace;
+}
+
+div:nth-of-type(3) {
+  color: maroon;
+  font-size: 25px;
+  font-style: italic;
+}
+
+div:nth-of-type(4) h3 {
+  color: darkblue;
+  font-family: serif;
+}
+
+div:last-of-type {
+  color: lightpink;
+  font-style: italic;
+}
+
+body {
+  background-color: black;
+}
+
+h1,
+p {
+  color: white;
+}
