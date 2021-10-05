@@ -17,3 +17,6 @@ h1, p {
 li {
     width: 55px;
 }
+ol:active {
+    font-family: Akronim;
+}
