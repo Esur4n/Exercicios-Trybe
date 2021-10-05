@@ -14,9 +14,18 @@ h1, p {
     background-color: grey;
 }
 
-li {
+.tamanhoh {
     width: 55px;
 }
-ol:active {
+.fonte:active {
     font-family: Akronim;
+}
+
+ul, ol {
+    list-style: none;
+    position: absolute;
+}
+
+ul {
+    left: 100px;
 }
