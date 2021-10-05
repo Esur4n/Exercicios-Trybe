@@ -1,0 +1,31 @@
+h1, p {
+    text-align: center;
+}
+
+#listp:hover {
+    background-color: purple;
+}
+
+#listr:hover {
+    background-color: red;
+}
+
+#listg:hover {
+    background-color: grey;
+}
+
+.tamanhoh {
+    width: 55px;
+}
+.fonte:active {
+    font-family: Akronim;
+}
+
+ul, ol {
+    list-style: none;
+    position: absolute;
+}
+
+ul {
+    left: 100px;
+}
