@@ -1,0 +1,20 @@
+.fundoamarelo {
+  background-color: yellow;
+}
+
+ol li:nth-of-type(even) {
+  color: green;
+}
+
+ol li:nth-of-type(odd) {
+  text-transform: uppercase;
+}
+
+.header {
+  color: red;
+}
+
+.header em {
+  border: 1px solid black;
+  font-size: 40px;
+}
