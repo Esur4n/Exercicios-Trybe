@@ -26,3 +26,35 @@ li {
 li em {
   font-weight: bold;
 }
+
+.primeiros {
+  color: blue;
+}
+
+.java {
+  background-color: pink;
+}
+
+ul:last-of-type li:hover {
+  font-weight: bold;
+}
+
+.fundolaranja:hover {
+  background-color: orange;
+}
+
+.fundoverde:hover {
+  background-color: green;
+}
+
+.fundopreto:hover {
+  background-color: black;
+}
+
+.fundoamareloh:hover{
+  background-color: yellow;
+}
+
+.fundolverde:hover{
+  background-color: lightgreen;
+}
