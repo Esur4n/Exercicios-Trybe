@@ -1,0 +1,9 @@
+header, .alinhamentomenu {
+    text-align: center;
+}
+
+.listadenavegacao {
+    list-style-type: none;
+    display: inline-block;
+    width: 33%;
+}
