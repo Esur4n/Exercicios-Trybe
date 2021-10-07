@@ -1,5 +1,3 @@
-
-
 body {
   background-color: black;
   color: white;
@@ -19,7 +17,6 @@ nav {
   background-color: rgb(153, 66, 34);
   margin-bottom: 50px;
   padding: 5px;
-  color: ;
 }
 
 header,
@@ -72,7 +69,6 @@ h4,
   padding: 10px;
   padding-bottom: 800px;
   background-color: rgb(153, 66, 34);
-  padding
 }
 
 .inlinemain {
@@ -88,7 +84,6 @@ h4,
   background-color: rgb(61, 131, 61);
   margin: 0;
   padding: 7px;
-  color: ;
 }
 
 .articlecolor {
@@ -107,6 +102,6 @@ h4,
   padding-bottom: 15px;
 }
 
-.referenciascor {;
+.referenciascor {
   padding-bottom: 15px;
 }
