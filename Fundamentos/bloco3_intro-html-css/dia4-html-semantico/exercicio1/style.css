@@ -1,0 +1,107 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+b {
+  text-decoration: underline;
+}
+
+header {
+  background-color: rgb(143, 143, 11);
+  color: black;
+  padding: 20px;
+}
+
+nav {
+  background-color: rgb(153, 66, 34);
+  margin-bottom: 50px;
+  padding: 5px;
+}
+
+header,
+.alinhamentomenu,
+.orgsubtitulo,
+.centralizandofooter {
+  text-align: center;
+}
+
+.listadenavegacao {
+  list-style-type: none;
+  display: inline-block;
+  width: 33%;
+}
+
+h3,
+.alinhamentop,
+.asidebar {
+  text-align: center;
+}
+
+.primeirassection {
+  width: 49.6%;
+  display: inline-block;
+  vertical-align: top;
+  background-color: rgb(36, 52, 100);
+}
+
+.tamanhoimg {
+  width: 125px;
+  float: right;
+  border-radius: 50%;
+}
+
+.larguraartigo {
+  width: 85%;
+}
+
+.tamanhoolhos {
+  float: right;
+  border-radius: 50%;
+}
+
+.asidebar {
+  display: inline-block;
+  width: 13%;
+  margin-right: 10 px;
+  vertical-align: top;
+  margin: 5;
+  padding: 10px;
+  padding-bottom: 800px;
+  background-color: rgb(153, 66, 34);
+}
+
+.inlinemain {
+  display: inline-block;
+}
+
+.centralizandofooter {
+  height: 200px;
+  padding-top: 10px;
+}
+
+.fundosec3 {
+  background-color: rgb(61, 131, 61);
+  margin: 0;
+  padding: 7px;
+}
+
+.articlecolor {
+  background-color: black;
+}
+
+.segundasec {
+  padding-bottom: 2px;
+  padding-right: 6px;
+}
+
+.corfatos {
+  background-color: rgb(116, 3, 3);
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.referenciascor {
+  padding-bottom: 15px;
+}
