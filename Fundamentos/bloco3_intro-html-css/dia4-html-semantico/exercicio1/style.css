@@ -1,6 +1,4 @@
-main, header, nav, ul ,section, article, p, aside, footer {
-  border: solid 1px red;
-}
+
 
 body {
   background-color: black;
@@ -11,8 +9,23 @@ b {
   text-decoration: underline;
 }
 
+header {
+  background-color: rgb(143, 143, 11);
+  color: black;
+  padding: 20px;
+}
+
+nav {
+  background-color: rgb(153, 66, 34);
+  margin-bottom: 50px;
+  padding: 5px;
+  color: ;
+}
+
 header,
-.alinhamentomenu, .orgsubtitulo, .centralizandofooter {
+.alinhamentomenu,
+.orgsubtitulo,
+.centralizandofooter {
   text-align: center;
 }
 
@@ -22,19 +35,17 @@ header,
   width: 33%;
 }
 
-h4, .alinhamentop, .asidebar {
+h4,
+.alinhamentop,
+.asidebar {
   text-align: center;
-}
-
-.alinhamentomenu {
-  margin-bottom: 80px;
 }
 
 .primeirassection {
   width: 49.6%;
   display: inline-block;
   vertical-align: top;
-  background-color: royalblue;
+  background-color: rgb(36, 52, 100);
 }
 
 .tamanhoimg {
@@ -44,7 +55,7 @@ h4, .alinhamentop, .asidebar {
 }
 
 .larguraartigo {
-  width:85%;
+  width: 85%;
 }
 
 .tamanhoolhos {
@@ -58,9 +69,10 @@ h4, .alinhamentop, .asidebar {
   margin-right: 10 px;
   vertical-align: top;
   margin: 5;
-  margin-top: 20px;
   padding: 10px;
-  padding-bottom: 200px;
+  padding-bottom: 800px;
+  background-color: rgb(153, 66, 34);
+  padding
 }
 
 .inlinemain {
@@ -69,7 +81,32 @@ h4, .alinhamentop, .asidebar {
 
 .centralizandofooter {
   height: 200px;
+  padding-top: 10px;
 }
+
 .fundosec3 {
-  background-color: lightgreen;
+  background-color: rgb(61, 131, 61);
+  margin: 0;
+  padding: 7px;
+  color: ;
+}
+
+.articlecolor {
+  background-color: black;
+}
+
+.segundasec {
+  padding-bottom: 2px;
+  padding-right: 6px;
+}
+
+.corfatos {
+  background-color: rgb(116, 3, 3);
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.referenciascor {;
+  padding-bottom: 15px;
 }
