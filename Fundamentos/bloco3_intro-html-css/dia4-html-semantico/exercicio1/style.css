@@ -1,9 +1,49 @@
-header, .alinhamentomenu {
-    text-align: center;
+main, header, nav, ul ,section, article, p {
+  border: solid 1px red;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+header,
+.alinhamentomenu, .orgsubtitulo {
+  text-align: center;
 }
 
 .listadenavegacao {
-    list-style-type: none;
-    display: inline-block;
-    width: 33%;
+  list-style-type: none;
+  display: inline-block;
+  width: 33%;
 }
+
+h4, .alinhamentop {
+  text-align: center;
+}
+
+.alinhamentomenu {
+  margin-bottom: 80px;
+}
+
+.primeirassection {
+  width: 49.6%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.tamanhoimg {
+  width: 125px;
+  float: right;
+  border-radius: 50%;
+}
+
+.larguraartigo {
+  width:85%;
+}
+
+.tamanhoolhos {
+  float: right;
+  border-radius: 50%;
+}
+
