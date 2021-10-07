@@ -1,4 +1,4 @@
-main, header, nav, ul ,section, article, p {
+main, header, nav, ul ,section, article, p, aside, footer {
   border: solid 1px red;
 }
 
@@ -7,8 +7,12 @@ body {
   color: white;
 }
 
+b {
+  text-decoration: underline;
+}
+
 header,
-.alinhamentomenu, .orgsubtitulo {
+.alinhamentomenu, .orgsubtitulo, .centralizandofooter {
   text-align: center;
 }
 
@@ -18,7 +22,7 @@ header,
   width: 33%;
 }
 
-h4, .alinhamentop {
+h4, .alinhamentop, .asidebar {
   text-align: center;
 }
 
@@ -30,6 +34,7 @@ h4, .alinhamentop {
   width: 49.6%;
   display: inline-block;
   vertical-align: top;
+  background-color: royalblue;
 }
 
 .tamanhoimg {
@@ -47,3 +52,24 @@ h4, .alinhamentop {
   border-radius: 50%;
 }
 
+.asidebar {
+  display: inline-block;
+  width: 13%;
+  margin-right: 10 px;
+  vertical-align: top;
+  margin: 5;
+  margin-top: 20px;
+  padding: 10px;
+  padding-bottom: 200px;
+}
+
+.inlinemain {
+  display: inline-block;
+}
+
+.centralizandofooter {
+  height: 200px;
+}
+.fundosec3 {
+  background-color: lightgreen;
+}
