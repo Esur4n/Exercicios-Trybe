@@ -66,7 +66,7 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 // }
 // ====================================
 
-// menorNumero = 1000
+// menorNumero = numbers[0]
 
 // for (let i = 0; i < numbers.length; i += 1) {
 //   if(numbers[i] < menorNumero) {
@@ -85,12 +85,34 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 // console.log(umA25)
 // ====================================
 
-let umA25 = []
+// let umA25 = []
 
-for(i = 1; i <= 25; i += 1) {
-  umA25.push(i)
-}
+// for(i = 1; i <= 25; i += 1) {
+//   umA25.push(i)
+// }
 
-for(s = 0; s < umA25.length; s += 1) {
-  console.log(umA25[s] / 2)
-}
+// for(s = 0; s < umA25.length; s += 1) {
+//   console.log(umA25[s] / 2)
+// }
+// ====================================
+
+// // Bonus
+let numbersMultiplicado = []
+
+  for (let i = 0; i < numbers.length; i += 1) {
+    // vai passar pelos numeros do numbers
+    for (let j = i + 1; j < numbers.length; j += 1) {
+      // vai passar pelo numero a frente do primeiro for
+      if (numbers[i] > numbers[j]) {
+        // vai comparar para ver qual dos dois e maior, o primeiro ou o segundo
+        let aux = numbers[i];
+        // armazena o valor do primeiro for caso ele seja maior que o segundo
+        numbers[i] = numbers[j];
+        // transforma o valor do primeiro for no valor do segundo caso o primeiro seja o maior 
+        numbers[j] = aux;
+        // transforma o numero menor no numero maior, caso o primeiro seja maior 
+      }
+    }
+  }
+console.log(numbers)
+
