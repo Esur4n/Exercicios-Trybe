@@ -93,6 +93,15 @@
       image1.className = 'small-image'
       document.querySelector('.left-content').appendChild(image1);
 
+      // passo 8
+      let listaNumeros = ['um', 'dois', 'tres', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+      let ul = document.createElement('ul');
+      document.querySelector('.right-content').appendChild(ul);
+      for (let i = 0; i < listaNumeros.length; i += 1) {
+        let li = document.createElement('li');
+        li.innerText = listaNumeros[i];
+        ul.appendChild(li);
+      }
     </script>
   </body>
 </html>
