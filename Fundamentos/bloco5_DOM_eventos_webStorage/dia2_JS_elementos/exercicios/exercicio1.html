@@ -62,9 +62,15 @@
       document.body.appendChild(createH1);
       document.querySelector('h1').innerText = 'Exercicios 5.2 - JavaScript DOM';
 
+      // passo 2
       let createMain = document.createElement('main');
       document.body.appendChild(createMain);
       document.querySelector('main').className = 'main-content';
+
+      // passo 3
+      let createSection = document.createElement('section');
+      document.querySelector('.main-content').appendChild(createSection);
+      document.querySelector('.main-content').firstElementChild.className = 'center-content';
     </script>
   </body>
 </html>
