@@ -108,6 +108,29 @@
         let h3 = document.createElement('h3');
         createMain.appendChild(h3);
       }
+
+      // alteracoes e remocoes
+      // passo 1
+      createH1.className = 'title';
+
+      // passo 2
+      let allH3 = document.querySelectorAll('h3')
+      for (let i = 0; i < allH3.length; i += 1) {
+        allH3[i].className = 'description'
+      }
+
+      // passo 3
+      createMain.removeChild(createSection2)
+
+      // passo 4
+      createSection3.style.marginRight = 'auto';
+
+      // passo 5
+      createSection.parentElement.style.backgroundColor = 'green';
+
+      //passo 6
+      ul.lastChild.remove()
+      ul.lastChild.remove()
     </script>
   </body>
 </html>
