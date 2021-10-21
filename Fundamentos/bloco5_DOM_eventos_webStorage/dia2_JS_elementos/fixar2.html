@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <main id="paiDoPai">
+    <section id="pai">
+      <section id="primeiroFilho"></section>
+      <section id="elementoOndeVoceEsta">
+        <section id="primeiroFilhoDoFilho"></section>
+        <section id="segundoEUltimoFilhoDoFilho"></section>
+      </section>
+      Atenção!
+      <section id="terceiroFilho"></section>
+      <section id="quartoEUltimoFilho"></section>
+    </section>
+  </main>
+  <script>
+    let eu = document.getElementById('elementoOndeVoceEsta');
+
+    eu.parentElement.style.color = 'blue';
+
+    let firstChildOfChild = document.getElementById('primeiroFilhoDoFilho');
+
+    firstChildOfChild.innerText = 'dale na narguileira';
+
+    let pai = document.getElementById('pai');
+
+    let novoElemento = document.createElement('div');
+    let novoElemento2 = document.createElement('div');
+    let novoElemento3 = document.createElement('div');
+
+    pai.appendChild(novoElemento);
+    eu.appendChild(novoElemento2);
+    firstChildOfChild.appendChild(novoElemento3);
+
+    firstChildOfChild.lastChild.id = 'neto';
+
+    let neto = document.getElementById('neto');
+    let quartoFilho = document.getElementById('quartoEUltimoFilho')
+
+    for (let i = pai.childNodes.length - 1; i >= 0; i -= 1) {
+      let filhoInutil = pai.childNodes[i];
+      if (filhoInutil.id !== 'elementoOndeVoceEsta') {
+        filhoInutil.remove();
+      }
+    }
+    const segundoEUltimoFilhoDoFilho = document.getElementById('segundoEUltimoFilhoDoFilho');
+    segundoEUltimoFilhoDoFilho.remove();
+  </script>
+</body>
+</html>
