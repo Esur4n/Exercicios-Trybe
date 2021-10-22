@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      // passo 1
+      let createH1 = document.createElement('h1');
+      document.body.appendChild(createH1);
+      document.querySelector('h1').innerText = 'Exercicios 5.2 - JavaScript DOM';
+
+      // passo 2
+      let createMain = document.createElement('main');
+      document.body.appendChild(createMain);
+      document.querySelector('main').className = 'main-content';
+
+      // passo 3
+      let createSection = document.createElement('section');
+      document.querySelector('.main-content').appendChild(createSection);
+      document.querySelector('.main-content').firstElementChild.className = 'center-content';
+
+      // passo 4
+      let createP = document.createElement('p');
+      document.querySelector('.center-content').appendChild(createP);
+      document.querySelector('.center-content').firstElementChild.innerText = 'algum texto ai';
+
+      // passo 5
+      let createSection2 = document.createElement('section');
+      document.querySelector('.main-content').appendChild(createSection2);
+      document.querySelector('.center-content').nextElementSibling.className = 'left-content';
+
+      // passo 6
+      let createSection3 = document.createElement('section');
+      document.querySelector('.main-content').appendChild(createSection3);
+      document.querySelector('.left-content').nextElementSibling.className = 'right-content';
+
+      // passo 7
+      let image1 = document.createElement('img');
+      image1.src = 'https://picsum.photos/200'
+      image1.className = 'small-image'
+      document.querySelector('.left-content').appendChild(image1);
+
+      // passo 8
+      let listaNumeros = ['um', 'dois', 'tres', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+      let ul = document.createElement('ul');
+      document.querySelector('.right-content').appendChild(ul);
+      for (let i = 0; i < listaNumeros.length; i += 1) {
+        let li = document.createElement('li');
+        li.innerText = listaNumeros[i];
+        ul.appendChild(li);
+      }
+
+      // passo 9
+      for (let i = 0; i < 3; i += 1) {
+        let h3 = document.createElement('h3');
+        createMain.appendChild(h3);
+      }
+
+      // alteracoes e remocoes
+      // passo 1
+      createH1.className = 'title';
+
+      // passo 2
+      let allH3 = document.querySelectorAll('h3')
+      for (let i = 0; i < allH3.length; i += 1) {
+        allH3[i].className = 'description'
+      }
+
+      // passo 3
+      createMain.removeChild(createSection2)
+
+      // passo 4
+      createSection3.style.marginRight = 'auto';
+
+      // passo 5
+      createSection.parentElement.style.backgroundColor = 'green';
+
+      //passo 6
+      ul.lastChild.remove()
+      ul.lastChild.remove()
+    </script>
+  </body>
+</html>

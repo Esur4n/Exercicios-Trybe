@@ -133,7 +133,3 @@ function vericaFimPalavra (palavra, fimPalavra) {
 }
 
 vericaFimPalavra('trybe', 'be')
-mano = 'traibe'
-let conta = mano.length * 0.33
-
-// console.log(Math.round(conta))
