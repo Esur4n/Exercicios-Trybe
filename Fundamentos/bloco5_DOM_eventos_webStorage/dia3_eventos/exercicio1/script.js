@@ -61,3 +61,23 @@ corHoliday()
 
 // Exercicio 4
 buttonCreator('Sexta-Feira', 'btn-friday')
+
+// Exercicio 5
+function textoSextas(fridaysArray) {
+  let friday = document.querySelectorAll('.friday');
+  let botaoSexta = document.querySelector('#btn-friday')
+  let textSexta = 'Sextou!!!'
+
+  botaoSexta.addEventListener('click', function() {
+  for (let i = 0; i < friday.length; i += 1) {
+    if (friday[i].innerText === textSexta) {
+      friday[i].innerText = fridaysArray[i];
+    } else {
+      friday[i].innerText = textSexta;
+    }
+  }
+  })
+}
+let diasSextas = [4, 11, 18, 25];
+textoSextas(diasSextas)
+
