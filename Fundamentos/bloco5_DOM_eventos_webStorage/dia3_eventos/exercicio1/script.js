@@ -8,24 +8,35 @@ function createDaysOfTheWeek() {
       dayListItem.innerHTML = days;
   
       weekDaysList.appendChild(dayListItem);
-    };
   };
+};
   
   createDaysOfTheWeek();
   
   // Escreva seu código abaixo.
+  // Exercicio 1
   const dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
   let days = document.querySelector('#days')
 
-  for (let i = 0; i < dezDaysList.length; i += 1) {
+for (let i = 0; i < dezDaysList.length; i += 1) {
       let today = document.createElement('li');
       today.className = 'day';
       today.innerText = dezDaysList[i];
       if (today.innerText == '24' || today.innerText == '25' || today.innerText == '31') {
           today.classList.add('holiday')
-      }
+    }
       if (today.innerText == '4' || today.innerText == '11' || today.innerText == '18' || today.innerText == '25') {
         today.classList.add('friday')
-    }
-      days.appendChild(today);
   }
+      days.appendChild(today);
+}
+
+  // Exercicio 2
+let containerButton = document.querySelector('.buttons-container')
+function buttonH(feriados) {
+  let botao = document.createElement('button');
+  botao.innerText = feriados;
+  botao.id = 'btn-holiday';
+  containerButton.appendChild(botao);
+}
+buttonH('Feriados')
