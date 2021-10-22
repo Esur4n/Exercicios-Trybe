@@ -40,3 +40,21 @@ function buttonH(feriados) {
   containerButton.appendChild(botao);
 }
 buttonH('Feriados')
+// Exercicio 3
+
+function corHoliday() {
+  let holidays = document.querySelectorAll('.holiday');
+  let botaoFeriado = document.querySelector('#btn-holiday')
+  let normalColor = 'rgb(238,238,238)';
+  let newColor = 'aqua'
+
+  botaoFeriado.addEventListener('click', function() {
+  for (let i = 0; i < holidays.length; i += 1) {
+    if (holidays[i].style.backgroundColor === newColor) {
+      holidays[i].style.backgroundColor = normalColor;
+    } else {
+      holidays[i].style.backgroundColor = newColor}
+  }
+  })
+}
+corHoliday()
