@@ -33,15 +33,15 @@ for (let i = 0; i < dezDaysList.length; i += 1) {
 
   // Exercicio 2
 let containerButton = document.querySelector('.buttons-container')
-function buttonH(feriados) {
+function buttonCreator(coisa, id) {
   let botao = document.createElement('button');
-  botao.innerText = feriados;
-  botao.id = 'btn-holiday';
+  botao.innerText = coisa;
+  botao.id = id;
   containerButton.appendChild(botao);
 }
-buttonH('Feriados')
-// Exercicio 3
+buttonCreator('Feriados', 'btn-holiday')
 
+// Exercicio 3
 function corHoliday() {
   let holidays = document.querySelectorAll('.holiday');
   let botaoFeriado = document.querySelector('#btn-holiday')
@@ -58,3 +58,6 @@ function corHoliday() {
   })
 }
 corHoliday()
+
+// Exercicio 4
+buttonCreator('Sexta-Feira', 'btn-friday')
