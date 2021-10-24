@@ -81,3 +81,65 @@ function textoSextas(fridaysArray) {
 let diasSextas = [4, 11, 18, 25];
 textoSextas(diasSextas)
 
+// Exercicio 6
+function zoomIn() {
+  days.addEventListener('mouseover', function(event) {
+    event.target.style.fontSize = '30px';
+  });
+}
+
+function zoomOut() {
+  days.addEventListener('mouseout', function(event) {
+    event.target.style.fontSize = '20px';
+  });
+}
+zoomIn();
+zoomOut();
+
+// Exercicio 7
+function tarefas(string) { 
+  let divTasks = document.querySelector('.my-tasks')
+  let newTask = document.createElement('span');
+  newTask.innerText = string
+  divTasks.appendChild(newTask)
+}
+
+tarefas('Cagar');
+
+// Exercicio 8 
+function subColor(color) {
+  let divTasks = document.querySelector('.my-tasks');
+  let newTaskColor = document.createElement('div');
+  newTaskColor.className = 'task'
+  newTaskColor.style.backgroundColor = color;
+  divTasks.appendChild(newTaskColor);
+}
+subColor('green');
+
+// Exercicio 9 
+function selectTask() {
+  let select = document.querySelector('.task');
+  select.addEventListener('click', function(event) {
+    if (select.className === 'task') {
+    event.target.classList.add('selected');
+    } else {
+      event.target.className = 'task';
+    }
+  })
+}
+selectTask()
+
+// Exercicio 10 
+function dayColor() {
+  let select = document.querySelector('.task');
+  if (select.className === 'task selected') {
+  days.addEventListener('click', function(event) {
+      if (days.backgroundColor !== select.style.backgroundColor) {
+        event.target.style.backgroundColor = select.style.backgroundColor;
+      } else {
+        event.target.style.backgroundColor = 'rgb(238,238,238)';
+      }
+    }) 
+  }
+}
+dayColor()
