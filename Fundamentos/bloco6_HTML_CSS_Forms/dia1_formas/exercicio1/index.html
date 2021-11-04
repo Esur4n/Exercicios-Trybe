@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form action="" method="get">
+    <fieldset>
+      <legend>Dados Pessoais</legend>
+
+      <label for="nome">Nome</label>
+      <input class="" type="text" id="nome" placeholder="Digite seu nome" required maxlength="40">
+     
+      <label for="email">Email</label>
+      <input type="text" id="email" placeholder="Digite seu E-mail" required maxlength="50">
+     
+      <label for="cpf">CPF</label>
+      <input type="text" id="cpf" placeholder="Digite seu CPF" required maxlength="11">
+     
+      <label for="endereco">Endereco</label>
+      <input type="text" id="endereco" placeholder="Digite seu Endereco" required maxlength="200">
+      
+      <label for="cidade">Cidade</label>
+      <input type="text" id="cidade" placeholder="Digite Sua cidade" required maxlength="28">
+      
+      <label for="estados">Estado</label>
+      <select name="estado" id="estados" required></select>
+
+      <label for="casa">Casa</label>
+      <input type="radio" id="casa" name="casap" required>
+
+      <label for="apartamento">Apartamento</label>
+      <input type="radio" id="apartamento" name="casap">
+    </fieldset>
+    <fieldset>
+      <legend>Dados ultimo emprego</legend>
+
+      <label for="curriculo">Resumo do currículo</label>
+      <textarea name="" id="" cols="30" rows="10" maxlength="1000" required></textarea>
+       
+      <label for="cargo">Cargo</label>
+      <input type="text" id="cargo" required maxlength="40">
+
+      <label for="descricaoc">Descrição do cargo</label>
+      <textarea name="" id="descricaoc" cols="30" rows="10" required></textarea>
+
+      <label for="data">Data de Inicio</label>
+      <input type="date" placeholder="dd/mm/aaaa" required id="data">
+    </fieldset>
+    <button type="submit" id="botaozao">Submit</button>
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>
