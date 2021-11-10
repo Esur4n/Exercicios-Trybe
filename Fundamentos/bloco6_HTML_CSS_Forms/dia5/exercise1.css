@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 20px;
+  margin: 30px 70px;
+}
+h1 {
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+h2 {
+
+}
+
+img {
+    max-width: 100%;
+    margin-bottom: 25px;
+}
+
+figure {
+    margin: 0;
+}
+
+@media screen and (min-width:602px) {
+  body {
+    font-size: 20px;
+    margin: 30px 70px;
+    background-color: black;
+    color: white;
+  }
+  h1 {
+    font-size: 30px;
+    margin-bottom: 25px;
+  }
+}
