@@ -20,7 +20,25 @@ const lesson3 = {
 
 function addnoite(objeto, chave, valor) {
   objeto[chave] = valor;
-  console.log(lesson2);
+  // console.log(lesson2);
 }
 
 addnoite(lesson2, 'turno', 'noite');
+
+function listKeys(objeto) {
+  // console.log(Object.keys(objeto));
+}
+
+listKeys(lesson1);
+
+function size(objeto) {
+  console.log(Object.keys(objeto).length);
+}
+
+// size(lesson1);
+
+function listValues(objeto) {
+  console.log(Object.values(objeto));
+}
+
+listValues(lesson1);
