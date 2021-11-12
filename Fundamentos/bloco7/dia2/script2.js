@@ -41,4 +41,35 @@ function listValues(objeto) {
   console.log(Object.values(objeto));
 }
 
-listValues(lesson1);
+// listValues(lesson1);
+
+const allLessons = Object.assign({}, {lesson1, lesson2, lesson3});
+// console.log(allLessons);
+
+function allStd() {
+  let totalStds = allLessons.lesson1.numeroEstudantes + allLessons.lesson2.numeroEstudantes + allLessons.lesson3.numeroEstudantes; 
+  console.log(totalStds);
+}
+
+// allStd();
+
+function keyValue(objeto, posicao) {
+  console.log(Object.values(objeto)[posicao]);
+}
+
+// keyValue(lesson1, 0);
+
+function check(objeto, chave, valor) {
+  let vdd;
+  for (let i in objeto) {
+    if (i === chave && objeto[i] === valor) {
+      vdd = true;
+      break;
+    } else {
+      vdd = false
+    }
+  }
+  console.log(vdd)
+}
+
+check(lesson1, 'materia', 'Matemátic');
