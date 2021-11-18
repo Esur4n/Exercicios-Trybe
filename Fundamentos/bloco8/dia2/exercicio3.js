@@ -63,17 +63,8 @@ const books = [
 
 // Adicione o código do exercício aqui:
 
-function smallerName() {
-  let nameBook;
+const findBook = books.find((name) => {
+  return name.name.length === 26;
+})
 
-  books.forEach((value) => {
-    if (!nameBook || nameBook.length > value.name.length) { 
-      // o !nameBook esta convertendo o undefined (que naturalmente e falso) para verdadeiro para q possa passar pela primeira condicao.
-      nameBook = value.name;
-    }
-  });
-  
-  return nameBook;
-}
-
-console.log(smallerName());
+console.log(findBook);
