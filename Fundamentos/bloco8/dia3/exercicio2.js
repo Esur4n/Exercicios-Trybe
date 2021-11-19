@@ -60,20 +60,11 @@ const books = [
     releaseYear: 1928,
   },
 ];
+function nameAndAge() {
+  books.sort((a, b) => (a.releaseYear - a.author.birthYear) - (b.releaseYear - b.author.birthYear));
+  return books.map((book)=>{
+    return { Author: book.author.name,  Age: book.releaseYear - book.author.birthYear };
+  })
+}
 
-// Adicione o código do exercício aqui:
-
-const expectedResult = [
-  'As Crônicas de Gelo e Fogo - Fantasia - George R. R. Martin',
-  'O Senhor dos Anéis - Fantasia - J. R. R. Tolkien',
-  'Fundação - Ficção Científica - Isaac Asimov',
-  'Duna - Ficção Científica - Frank Herbert',
-  'A Coisa - Terror - Stephen King',
-  'O Chamado de Cthulhu - Terror - H. P. Lovecraft',
-];
-
-const formatedBook = books.map((livro) => {
-    return `${livro.name} - ${livro.genre} - ${livro.author.name}`;
-  });
-
-console.log(formatedBook);
+console.log(nameAndAge());
