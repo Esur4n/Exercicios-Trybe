@@ -25,7 +25,7 @@ const books = [
     genre: 'Ficção Científica',
     author: {
       name: 'Isaac Asimov',
-      birthYear: 1920,
+      birthYear: 1921,
     },
     releaseYear: 1951,
   },
@@ -61,8 +61,12 @@ const books = [
   },
 ];
 
-const foi80 = books.some((a) => {
-  return a.releaseYear >= 1980 && a.releaseYear <= 1989;
-})
+const expectedResult = false;
 
-console.log(foi80);
+function authorUnique() {
+  return books.every((book) =>
+    !books.some((bookSome) =>
+      (bookSome.author.birthYear === book.author.birthYear) && (bookSome.author.name !== book.author.name)));
+  }
+
+console.log(authorUnique());
