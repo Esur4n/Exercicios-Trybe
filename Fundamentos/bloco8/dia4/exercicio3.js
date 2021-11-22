@@ -61,10 +61,8 @@ const books = [
   },
 ];
 
-// Adicione o código do exercício aqui:
-
 const a = books.reduce((base, valor, index, array)=> {
-  return (index === array.length - 1) ? `${base} ${valor.author.name}.` : `${base} ${valor.author.name},`;
-}, '');
+  return (index === array.length - 1) ? (base + valor.releaseYear - valor.author.birthYear) / array.length : base + valor.releaseYear - valor.author.birthYear;
+}, 0)
 
 console.log(a);
