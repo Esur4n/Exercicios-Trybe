@@ -37,6 +37,56 @@
         colors: ['white', 'black', 'red', 'green', 'blue', 'yellow'],
         index: 0,
       };
+
+      const PREV_ACTION = () => {
+        return {
+          type: 'PREVIOUS_COLOR',
+        }
+      }
+
+      const NEXT_ACTION = () => {
+        return {
+          type: 'NEXT_COLOR',
+        }
+      }
+
+      const reducer = (state = ESTADO_INICIAL, action) => {
+        switch(action.type) {
+          case 'NEXT_COLOR':
+            return {
+              ...state,
+              index: state.index <= 4 ? state.index + 1 : 0,
+            };
+          case 'PREVIOUS_COLOR':
+            return {
+              ...state,
+              index: state.index >= 1 ? state.index - 1 : 5,
+            }
+        }
+
+      }
+
+      const store = Redux.createStore(reducer);
+
+      const previous = document.getElementById('previous');
+      const next = document.getElementById('next');
+
+      previous.addEventListener('click', () => {
+        store.dispatch(PREV_ACTION());
+      })
+
+      next.addEventListener('click', () => {
+        store.dispatch(NEXT_ACTION());
+      })
+
+      store.subscribe(() => {
+        const state = store.getState();
+        const value = document.getElementById('value');
+        value.innerHTML = state.colors[state.index];
+        const container = document.getElementById('container');
+        container.style.backgroundColor = state.colors[state.index];
+      })
+
     </script>
   </body>
 </html>
