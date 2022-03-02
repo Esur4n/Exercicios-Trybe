@@ -23,6 +23,8 @@ function App() {
     return setMultiple(false);
   }
 
+// testando git
+
   useEffect(() => {
     testRandom();
   }, [number])
